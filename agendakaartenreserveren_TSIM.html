@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Agenda & Kaarten - THE STATE IF MARY</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<script src="js/login.js"></script>
+		<script src="js/slideagendastate.js"></script>
+		<script src="js/formulier.js"></script>
+
+
+		
+<div id="navigatie">
+<!--INLOGGEN & AANMELDEN-->		
+		<div class="inloggen">
+			<div class="main">
+					<form id="form_id" method="post" name="myform">
+						<div class="email">
+							<label>Gebruikersnaam:</label>
+							<input type="text" name="username" id="username"/>
+						</div>
+						
+						<div class="wachtwoord">
+							<label>Wachtwoord:</label>
+							<input type="password" name="password" id="password"/>
+						</div>
+						
+						<div class="aanmelden">	
+							<input type="button" value="Aanmelden" id="submit" onclick="validate()"/>
+						</div>
+					</form>
+			</div>
+		</div>
+	
+<!--NAVIGATIE-->	
+		<nav>
+					<div class= "logo">
+				<a href="home.html"> <img style="max-width: 150px; margin-top: 0px;" src="images/logo.png"></a>
+			</div>
+			    <ul>
+					<li><a href="home.html">HOME</a></li>
+					<li><a href="agendakaarten.html">AGENDA & KAARTEN</a></li>
+					<li><a href="#">THEATER HUREN</a></li>
+					<li><a href="donatie.html">DONATIE</a></li>
+					<li><a href="overons.html">OVER ONS</a>
+						<ul>
+							<li><a href="nieuwsbrief.html">NIEUWSBRIEF</a></li>
+							<li><a href="#">TONEELGROEP IMPERIUM</a></li>
+							<li><a href="#">ARCHIEF</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+		</nav>
+</div>
+		<!--PLAATS PAGINA-->
+		<div id="plaatswebsite"> 
+			<h1> AGENDA & KAARTEN</h1>
+			<p>THE STATE IF MARY</p>
+		</div>	
+		</head>
+	<body>
+
+	
+		
+<!--SLIDESHOW-->
+		<div class="slideshow">	<img src="images/agendastate1.jpg" alt="images/agendastate1.jpg" id="slideimage"></div>
+
+		
+		
+<!--CONTENT-->
+<!--actueel-->
+		<div id="contentagendakaarten">
+			<div class="contentagendainfo"> 
+				
+				<br/>
+				<br/>
+				<h2>THE STATE OF MARY</h2>
+				<p>Wat dacht je, de eerste keer dat je me zag? Heb je de dochter van de duivel bespioneerd waarvoor ze je hadden gewaarschuwd?</p>
+				<p>Twee iconische koninginnen in een bloedige machtsstrijd moeten omgaan met hun geloofsovertuigingen, de belangen van hun volk en de mannen om hen heen ... Maria's asiel stelt Elizabeth in staat van verdediging. Familieloyaliteit en plicht tegenover het koninkrijk, angst voor de dood en kindernijdigheid bepalen de uitkomst van deze intieme confrontatie. </p>
+				<p> Wie heeft de macht en wie leidt de staat?</p>
+				<p>Ik ruilde koninklijke tirannie voor een visie op gerechtigheid. En wat een vluchtige, nutteloze visie had het bewezen! Heeft rechtvaardigheid me de liefde en loyaliteit van mijn mensen opgeleverd? Heeft de rechter hun gefluister van mijn schoften tot zwijgen gebracht?</p>
+				<p> Kom en bekijk de topactrices Lara Stanisic en Sandy Topzand in deze state-of-the-art productie door Het Homerostheater, het prominente meertalige theatergezelschap uit Den Haag...</p>
+			<br/>
+						<h2><i class="far fa-calendar-alt"></i> 28 maart 2018</h2>
+						<h2><i class="far fa-clock"></i> 20:30 - 22:00</h2>
+			</div>
+		</div>
+<!--SIDEBAR-->
+			
+<!--SIDEBAR-->
+		<div id="sidebaragenda">
+				<h2>Reserveren</h2>
+				<br/>
+				<div id="Stap 1" class="tabcontent">
+				  		  
+				 <table>
+					 <tr>
+						<th></th>
+							 <th scope="col">Prijs</th>
+							 <th scope="col">Aantal</th>
+					 </tr>
+					 <tr>
+						 <th  scope="row">Normaal</th>
+							 <td >€15,00</td>
+							 <td>
+								 <select style="width:50px; height:30px;" name="prijs" id="prijs">
+									 <option value="1">1</option>
+									 <option value="2">2</option>
+									 <option value="3">3</option>
+									 <option value="4">4</option>
+								 </select>
+							</td>
+					 </tr>
+					 <tr>
+						 <th scope="row">Student</th>
+						  <td>€12,00</td>
+							 <td>
+								 <select style="width:50px; height:30px;" name="prijs" id="prijs">
+									 <option value="1">1</option>
+									 <option value="2">2</option>
+									 <option value="3">3</option>
+									 <option value="4">4</option>
+								 </select>
+							</td>
+						
+					 </tr>
+				</table>
+				
+				<input style="margin-left:0px" type="submit" value="Volgende" onclick="openCity(event, 'Stap 2')"/>
+				
+				</div>
+<br/>
+				<div id="Stap 2" class="tabcontent" style="display:none;">
+				<h3 style="margin-left:-10px;     margin-top: -43px;">Betaling<br/>
+				<select  style=" width: 356px;" name="referrer" id="hear-about">
+				 <option value="kiesuwbank">Kies uw bank</option>
+				 <option value="abnambro">ABN Ambro</option>
+				 <option value="asnbank">ASN Bank</option>
+				 <option value="bunq">bunq</option>
+				 <option value="ing">ING</option>
+				 <option value="knab">knab</option>
+				 <option value="rabobank">Rabobank</option>
+				 <option value="regiobank">Regio Bank</option>
+				 <option value="snsbank">SNS Bank</option>
+				 </select>
+				 </h3>
+				 
+				<h3 style="margin-left:-10px">Levering</h3>
+				<p style="margin-top:-15px; margin-left: -15px;">
+				 <input type="radio" name="genre" value="Z&M"
+				 checked="checked" /> Zelf printen / Mobiele tickets
+				 <br/>
+				 <input type="radio" name="genre" value="AK" />
+				 Afhalen aan de kassa (+€1,00)
+				</p>
+				  <h3 style="margin-left:-10px";>Samenvating</h3>
+					<table>
+						 <tr>
+							<th></th>
+								 <th scope="col">Prijs</th>
+								 <th scope="col">Aantal</th>
+						 </tr>
+						 <tr>
+							 <th  scope="row">Normaal</th>
+								 <td > 1x</td>
+								 <td>
+									€15,00
+								</td>
+						 </tr>
+						 <tr>
+							 <th scope="row">Student</th>
+							  <td>1x</td>
+								 <td>
+									 €12,00
+								</td>
+							
+						 </tr>
+						  <tr>
+							 <th scope="row">TOTAAL</th>
+							  <td> </td>
+								 <td>
+									 €27,00
+								</td>
+							
+						 </tr>
+					</table>
+					
+					<h3 style="margin-left:-10px";>E-mailadres* </br>
+					<input type="ETD" name="username" size="15"
+					 maxlength="30" />
+					</h3>
+					
+					
+					<script>
+					function show_alert() {
+					   alert("BEDANKT VOOR UW BESTELLING! U ontvangt een bevestiging van uw bestelling via het door u opgegeven e-mailadres.");
+					}
+					</script>
+					
+					
+					
+					
+					
+					<input style="margin-left:0px" type="submit" value="Reserveren"  onclick="show_alert();" />
+					<input style="margin-left:0px" type="submit" value="Terug"  onclick="openCity(event, 'Stap 1')"/>
+					
+				</div>
+
+				
+			
+		</div>
+		
+	</body>
+	</html>
+
+
+
+
+
+
+
+
+
+
+
+

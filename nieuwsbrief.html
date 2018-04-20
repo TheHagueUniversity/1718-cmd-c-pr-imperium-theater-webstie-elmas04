@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Nieuwsbrief </title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<script src="js/login.js"></script>
+		<script src="js/slidehomenieuwsbrief.js"></script>
+
+		
+<div id="navigatie">
+<!--INLOGGEN & AANMELDEN-->		
+		<div class="inloggen">
+			<div class="main">
+					<form id="form_id" method="post" name="myform">
+						<div class="email">
+							<label>Gebruikersnaam:</label>
+							<input type="text" name="username" id="username"/>
+						</div>
+						
+						<div class="wachtwoord">
+							<label>Wachtwoord:</label>
+							<input type="password" name="password" id="password"/>
+						</div>
+						
+						<div class="aanmelden">	
+							<input type="button" value="Aanmelden" id="submit" onclick="validate()"/>
+						</div>
+					</form>
+			</div>
+		</div>
+	
+<!--NAVIGATIE-->	
+		<nav>
+					<div class= "logo">
+				<a href="home.html"> <img style="max-width: 150px; margin-top: 0px;" src="images/logo.png"></a>
+			</div>
+			    <ul>
+					<li><a href="home.html">HOME</a></li>
+					<li><a href="agendakaarten.html">AGENDA & KAARTEN</a></li>
+					<li><a href="#">THEATER HUREN</a></li>
+					<li><a href="donatie.html">DONATIE</a></li>
+					<li><a href="overons.html">OVER ONS</a>
+						<ul>
+							<li><a href="nieuwsbrief.html">NIEUWSBRIEF</a></li>
+							<li><a href="#">TONEELGROEP IMPERIUM</a></li>
+							<li><a href="#">ARCHIEF</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+		</nav>
+</div>
+		<!--PLAATS PAGINA-->
+		<div id="plaatswebsite"> 
+			<h1> NIEUWSBRIEF</h1>
+		</div>	
+		</head>
+	<body>
+
+	
+		
+<!--SLIDESHOW-->
+		<div class="slideshow">	<img src="images/nieuws1.jpg" alt="images/nieuws1.jpg" id="slideimage"></div>
+
+		
+		
+<!--CONTENT-->
+<!--actueel-->
+		<div id="contentnieuwsbrief">
+			<div class="contentnieuwsbriefinfo"> 
+			<br/>
+			<br/>
+			<br/>
+			<h2 style="width:600px">JA, IK WIL OP DE HOOGTE GEHOUDEN WORDEN</h2>
+
+			<form>
+				<h4 style="width:380px">E-mailadres* </br>
+				 <input type="contact" name="username" size="15"
+				 maxlength="30" />
+				</h4>
+				<br/>
+				<h4 style="width:380px">Naam </br>
+				 <input type="contact" name="username" size="15"
+				 maxlength="30" />
+				</h4>
+				<br/>
+				<br/>
+					<script>
+					function show_alert() {
+					   alert("U ontvangt een bevestiging via het door u opgegeven e-mailadres.");
+					}
+					</script>
+				<input type="submit" name="subscribe" value="Aanmelden" onclick="show_alert();" />
+				
+			</form>			
+			
+			</div>
+		</div>
+<!--SIDEBAR-->
+		<div id="sidebar">
+
+			
+		</div>
+		
+	</body>
+	</html>
+
+
+
+
+
+
+
+
+
+
+
+

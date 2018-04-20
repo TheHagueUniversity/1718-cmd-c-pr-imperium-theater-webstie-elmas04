@@ -1,0 +1,723 @@
+@font-face 
+{
+	font-family: Fortheloveofhate;
+	src: url('fonts/Fortheloveofhate.ttf');
+}
+
+body
+{
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1, h2, h3, h4
+{
+	font-family: 'Fortheloveofhate';
+	padding-left:10px;
+}
+
+p, a, tr
+{
+	
+	font-family: 'Roboto', sans-serif;
+	padding-left:10px;
+	font-size:12px;
+	
+}
+
+ul, li
+{
+	font-family: 'Roboto', sans-serif
+}
+
+/*navigatie*/
+
+#navigatie
+{
+	position: fixed;
+    margin-top: -115px;
+    width: 100%;
+	z-index:1;
+}
+
+nav .logo
+{
+	float: left;
+	height: 100px;
+	line-height: 50px;
+	margin-left: 75px;
+	margin-top: -80px;
+	
+	
+}	
+
+nav 
+{ 
+	width: 100%;
+	background: #941B44;
+	margin: 0;
+	text-align: right;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	z-index: 1;
+	position:relative;
+	 
+}
+
+nav ul 
+{
+	margin-top:0px;
+	margin-right: 75px;
+	list-style-type: none;
+	padding: 0;
+}
+
+nav ul li
+{
+	margin-top:-20px;
+	display: inline-block;
+	padding: 20px 10px;
+	cursor: pointer;
+}
+
+nav ul li a
+{
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+nav ul li:hover
+{
+	background: white;
+}
+
+nav ul li:hover a
+{
+	color: #850832;
+}
+
+nav ul ul 
+{
+	position: absolute;
+	width: 200px;
+	background: #ffffffcc;
+	margin-top: 20px;
+	margin-left: -10px;
+	text-align: left;
+	display: none;
+}
+
+nav ul ul li
+{
+	display: block;
+}
+
+nav ul li:hover > ul
+{
+	display: block;
+}
+
+/*inlog en registratie formulier*/
+
+
+div.inloggen
+{
+	width: 100%;
+	height: 60px;
+	margin:15px auto;
+	background: #ffffffc4;
+	margin: 0;
+	text-align: right;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	
+}
+
+div.main
+{
+	width: 380px;
+	float:left;
+	margin-top:8px;
+	margin-left: 815px;
+}
+
+input[type=text],input[type=password], textarea
+{
+	width: 125px;
+	height: 10px;
+	padding: 5px;
+	margin-bottom: 25px;
+	margin-top: 5px;
+	border: 2px solid #ccc;
+	color: #4f4f4f;
+	font-size: 12px;
+	border-radius: 5px;
+	float:left;
+}
+
+label
+{
+	color: #464646;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	float:left;
+} 
+
+center
+{
+	font-size:32px;	
+}
+
+.note
+{
+	color:red;
+}
+.valid
+{
+	color:green;
+}
+.back
+{
+	text-decoration: none;
+	border: 1px solid rgb(0, 143, 255);
+	background-color: rgb(0, 214, 255);
+	padding: 3px 20px;
+	border-radius: 2px;
+	color: black;
+} 
+
+input[type=button]
+{
+	width: 80px;
+	height: 25px;
+	padding: 5px;
+	margin-bottom: 25px;
+	margin-top: 5px;
+	border: 2px solid #ccc;
+	color: #4f4f4f;
+	font-size: 12px;
+	border-radius: 5px;
+}
+
+input[type=button]:hover
+{
+	background: linear-gradient(#941b44 5%, #850832 100%);	
+	color:white;
+}
+
+div.email
+{
+	width: 150px;
+	height: 60px;	
+
+}
+
+div.wachtwoord
+{
+	width: 150px;
+	height: 60px;
+	margin-left:150px;
+	margin-top:-65px;	
+}
+
+div.aanmelden
+{
+	width: 80px;
+	height: 60px;
+	margin-left:300px;
+	margin-top:-42px;
+}
+
+/*slide*/
+
+.slideshow
+{
+	width: 100%;
+	height:400px;
+	margin-top: 115px;
+}
+
+.slide
+{
+	z-index:-1;
+}
+
+#slideimage
+{
+	width: 100%;
+	height: 400px;
+}
+
+/*content*/
+
+#content
+{
+	background: #ededed;
+	width:800px;
+	height:1200px;
+	margin-left:25px;
+	margin-top:-20px;
+	box-shadow: 0px 0px 5px -1px;
+}
+
+.article
+{
+	width:350px;
+	padding: 0px 15px;
+	
+	
+	
+}
+
+.articles
+{
+	width: 777px;
+    height: 1100px;
+    padding: 45px 7px 0px;
+	columns: 100px 2;
+}
+
+#advertentie
+{
+	width:350px;
+	border-color: white;
+	border-radius: 5px;
+	border-width:5px;
+	border-style: solid;
+	
+}
+
+
+#buttonarticle[type=button]
+{
+	width: 150px;
+    height: 50px;
+	padding: 5px;
+	margin-bottom: 25px;
+	margin-top: 5px;
+	border: 2px solid #ccc;
+	color: #4f4f4f;
+	font-size: 12px;
+	border-radius: 5px;
+}
+#buttonarticle[type=button]:hover
+{
+	background: linear-gradient(#941b44 5%, #850832 100%);	
+	color:white;
+}
+
+/*sidebar*/
+
+#sidebar
+{
+	width: 350px;
+	margin-top:-1191px;
+	margin-right:50px;
+	float: right;
+}
+
+.actueel
+{
+	width:360px;
+	padding: 0px 15px;
+	
+	
+	
+}
+
+.actueels
+{
+	width: 360px;
+    height: 1100px;
+    padding: 45px 7px 0px;
+}
+
+#voorstelling
+{
+	width:350px;
+	border-color: white;
+	border-radius: 5px;
+	border-width:5px;
+	border-style: solid;
+	
+}
+
+/*plaats pagina*/
+
+#plaatswebsite
+{
+	margin-top: 150px;
+    padding: 0px 30px 0px 100px;
+    background-color: #ffffffbd;
+    position: absolute;
+
+}
+
+/*AGENDA&KAARTEN*/
+#sidebaragenda
+{
+	width: 350px;
+	margin-top:-514px;
+	margin-right:50px;
+	float: right;
+}
+/*Actueel*/
+.actueelvoorstelling
+{
+	width:  780px;
+    height: 1100px;
+    padding: 45px 7px 0px;
+
+}
+
+.actueelagenda
+{
+	    width: 800px;
+    padding: 0px 15px;
+
+}
+
+.actueelagendakaart
+{
+	 width: 800px;
+    padding: 0px 40px;
+    
+}
+
+.informatieagenda
+{
+	margin-top: -179px;
+    margin-left: 425px;
+}
+
+#contentagenda
+{
+	background: #ededed;
+	width:800px;
+	height:1585px;
+	margin-left:25px;
+	margin-top:0px;
+	box-shadow: 0px 0px 5px -1px;
+}
+
+.contentagendainfo
+{
+	width: 720px;
+    margin-left: 40px;
+
+}
+
+#contentagendakaarten
+{
+	background: #ededed;
+	width:800px;
+	height:550px;
+	margin-left:25px;
+	margin-top:0px;
+	box-shadow: 0px 0px 5px -1px;
+}
+
+/*agenda & kaarten TSIM*/
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+   background: linear-gradient(#941b44 5%, #850832 100%);	
+	color:white;
+}
+
+.tabcontent {
+    display: block;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+
+
+table
+{
+	width:350px;
+	margin-top:-20px;
+}
+
+td,th
+{
+	 width:100px;
+	 margin-left:10px;
+	text-align: left;
+	
+	
+}
+
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+/*DONATIE*/
+/*content*/
+
+#contentdonatie
+{
+	background: #ededed;
+	width:800px;
+	height:600px;
+	margin-left:25px;
+	margin-top:0px;
+	box-shadow: 0px 0px 5px -1px;
+
+}
+
+.contentdonatieinfo
+{
+	width: 720px;
+    margin-left: 40px;
+
+}
+
+/*sidebar*/
+#sidebardonatie
+{
+	float: right;
+	margin-top:-564px;
+}
+
+.sidebardoneren
+{
+	width:400px;
+}
+
+.radiobuttons
+{
+	columns: 10px 3;
+	height:70px;
+	margin-left:30px;
+	margin-top: 10px;
+	
+}
+
+input[type=VTA]
+{
+	width: 100px;
+	height: 20px;
+	padding: 5px;
+	margin-bottom: 25px;
+	margin-top: 5px;
+	border: 2px solid #ccc;
+	color: #4f4f4f;
+	font-size: 12px;
+	border-radius: 5px;
+	float:left;
+}	
+
+input[type=ETD]
+{
+	width: 338px;
+	height: 20px;
+	padding: 5px;
+	margin-bottom: 25px;
+	margin-top: 5px;
+	border: 2px solid #ccc;
+	color: #4f4f4f;
+	font-size: 12px;
+	border-radius: 5px;
+	float:left;
+}
+
+select
+{
+	width: 352px;
+    height: 35px;
+	padding: 5px;
+	margin-bottom: 25px;
+	margin-top: 5px;
+	border: 2px solid #ccc;
+	color: #4f4f4f;
+	font-size: 12px;
+	border-radius: 5px;
+	float:left;
+}
+
+
+/*OVER ONS*/
+/*content*/
+#contentoverons
+{
+	background: #ededed;
+	width:800px;
+	height:1000px;
+	margin-left:25px;
+	margin-top:0px;
+	box-shadow: 0px 0px 5px -1px;
+
+}
+
+.contentoveronsinfo
+{
+	width: 720px;
+    margin-left: 40px;
+
+}
+
+/*sidebar*/
+
+/*CONTACT*/
+#plaatswebsitecontact
+{
+	margin-top: 63px;
+    padding: 0px 30px 0px 100px;
+    background-color: #cbcbcb;
+    position: absolute;
+    z-index: -1;
+	
+}
+
+#contentcontact
+{
+	
+	width:500px;
+	height:605px;
+	margin-left:25px;
+	margin-top:115px;
+
+
+}
+
+.contentcontactinfo
+{
+	width: 430px;
+    margin-left: 40px;
+
+}
+
+#map
+{
+	margin-top: -605px;
+    position: fixed;
+    margin-left: 526px;
+}
+
+iframe
+{
+	width: 750px; 
+	height: 500px;
+	
+}
+
+input[type=contact]
+{
+	width: 388px;
+	height: 20px;
+	padding: 5px;
+	margin-bottom: 25px;
+	margin-top: 5px;
+	border: 2px solid #ccc;
+	color: #4f4f4f;
+	font-size: 12px;
+	border-radius: 5px;
+	float:left;
+}
+
+textarea[type=bericht]
+{
+	width: 388px;
+	height: 75px;
+	padding: 5px;
+	margin-left: 0px;
+	margin-bottom: 25px;
+	margin-top: 5px;
+	border: 2px solid #ccc;
+	color: #4f4f4f;
+	font-size: 12px;
+	border-radius: 5px;
+	float:left;
+}
+
+input[type=submit]
+{
+	width: 80px;
+	height: 25px;
+	padding: 5px;
+	margin-bottom: 25px;
+	margin-top: 5px;
+	margin-left:10px;
+	border: 2px solid #ccc;
+	color: #4f4f4f;
+	font-size: 12px;
+	border-radius: 5px;
+}
+
+input[type=submit]:hover
+{
+	background: linear-gradient(#941b44 5%, #850832 100%);	
+	color:white;
+}
+
+/*NIEUWSBRIEF*/
+/*content*/
+#contentnieuwsbrief
+{
+	background: #ededed;
+	width:800px;
+	height:400px;
+	margin-left:25px;
+	margin-top:-20px;
+	box-shadow: 0px 0px 5px -1px;
+}
+
+.contentnieuwsbriefinfo
+{
+	width: 488px;
+    margin-left: 40px;
+
+}
+
+/*bedankt agenda*/
+
+
+body { font-family: sans-serif; }
+#confirmBox
+{
+    display: none;
+    background-color: #eee;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    position: fixed;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    padding: 6px 8px 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#confirmBox button {
+    background-color: #ccc;
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    padding: 2px;
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+}
+#confirmBox button:hover
+{
+    background-color: #ddd;
+}
+#confirmBox .message
+{
+    text-align: left;
+    margin-bottom: 8px;
+}

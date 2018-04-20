@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Donatie </title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<script src="js/login.js"></script>
+		<script src="js/slidedonatie.js"></script>
+
+		
+<div id="navigatie">
+<!--INLOGGEN & AANMELDEN-->		
+		<div class="inloggen">
+			<div class="main">
+					<form id="form_id" method="post" name="myform">
+						<div class="email">
+							<label>Gebruikersnaam:</label>
+							<input type="text" name="username" id="username"/>
+						</div>
+						
+						<div class="wachtwoord">
+							<label>Wachtwoord:</label>
+							<input type="password" name="password" id="password"/>
+						</div>
+						
+						<div class="aanmelden">	
+							<input type="button" value="Aanmelden" id="submit" onclick="validate()"/>
+						</div>
+					</form>
+			</div>
+		</div>
+	
+<!--NAVIGATIE-->	
+		<nav>
+					<div class= "logo">
+				<a href="home.html"> <img style="max-width: 150px; margin-top: 0px;" src="images/logo.png"></a>
+			</div>
+			    <ul>
+					<li><a href="home.html">HOME</a></li>
+					<li><a href="agendakaarten.html">AGENDA & KAARTEN</a></li>
+					<li><a href="#">THEATER HUREN</a></li>
+					<li><a href="donatie.html">DONATIE</a></li>
+					<li><a href="overons.html">OVER ONS</a>
+						<ul>
+							<li><a href="nieuwsbrief.html">NIEUWSBRIEF</a></li>
+							<li><a href="#">TONEELGROEP IMPERIUM</a></li>
+							<li><a href="#">ARCHIEF</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+		</nav>
+</div>
+		<!--PLAATS PAGINA-->
+		<div id="plaatswebsite"> 
+			<h1> DONATIE</h1>
+		</div>	
+		</head>
+	<body>
+
+	
+		
+<!--SLIDESHOW-->
+		<div class="slideshow">	<img src="images/donatie1.jpg" alt="images/donatie1.jpg" id="slideimage"></div>
+
+		
+		
+<!--CONTENT-->
+<!--actueel-->
+		<div id="contentdonatie">
+			<div class="contentdonatieinfo"> 
+				
+			<br/>
+			<br/>
+			<h2>WILT U EEN DONATIE DOEN?</h2>
+			<p>Draagt u het Imperium Theater een warm hart toe en wilt dit bekrachtigen door geld te doneren? Allereerst zijn we u hier enorm dankbaar voor.</p>
+			
+			<p>Alle sponsorgelden worden gebruikt voor de bedrijfsvoering van het Imperium Theater, voornamelijk ter promotie van de voorstellingen en verdampen niet in de post personeelskosten. Alle medewerkers, van kassamedewerker tot theaterdirecteur, werken met hart en ziel op vrijwillige basis.</p>
+		
+			<h4>Doneer jaarlijks €25,- en ontvang:</h4>
+			<ul>
+				<li>Een speciale donateursnieuwsbrief met achtergrondinformatie</li>
+				<li>Uitnodiging voor openbare repetities</li>
+				<li>Uitnodiging voor de jaarlijkse donateursavond rondom talentontwikkeling</li>
+				<li>10% korting op producten in onze webshop</li>
+			</ul>
+				
+			<h4>Doneer jaarlijks €50,- en ontvang:</h4>
+			<ul>
+				<li>Alle bovengenoemde voordelen</li>
+				<li>Twee vrijkaarten voor een voorstelling naar eigen keuzen</li>
+			</ul>
+
+			<h4>Doneer jaarlijks €75,- en ontvang:</h4>
+			<ul>
+				<li>Alle bovengenoemde voordelen</li>
+				<li>Jaarlijks een exclusief premièrebezoek</li>
+				<li>Jaarlijks lunchen met het gezelschap en een ontmoeting met de directie</li>
+			</ul>
+			</div>
+		</div>
+<!--SIDEBAR-->
+		<div id="sidebardonatie">
+			<div class="sidebardoneren">
+			<h2>DONEER MEE</h2>
+				<form>
+				
+				<h4 style= "margin-top:10px">Bedrag*
+				<div class="radiobuttons">
+				<p style="margin-top:0px">
+				<input type="radio" name="genre" value="rock"
+				 checked="checked" />
+				 <br/> 
+				 <br/> €25,-
+				 </p>
+				
+				 
+				 <p>
+				 <input type="radio" name="genre" value="pop" />
+				 <br/> 
+				 <br/>
+				 €50,-
+				  </p>
+				  
+				 <p>
+				 <input type="radio" name="genre" value="jazz" />
+				 <br/> 
+				 <br/>
+				 €75,-
+				</p>
+				 </h4>
+				</div>
+				
+				<h4 style="width:380px; margin-top:-25px;">Naam* </br>
+				 <input type="VTA" name="username" size="15"
+				 maxlength="30" placeholder="Naam" style="margin-right:5px" />
+				  
+				 
+				  
+				 <input type="VTA" name="username" size="15"
+				 maxlength="30" placeholder="Tussenv" style="margin-right:5px"/>
+				 
+				 <input type="VTA" name="username" size="15"
+				 maxlength="30" placeholder="Achternaam"/>
+				</h4>
+				<br/>
+				
+				
+				<h4 style="width:355px">E-mailadres* </br>
+				 <input type="ETD" name="username" size="15"
+				 maxlength="30" />
+				</h4>
+				<br/>
+				
+				<h4 style="width:355px">Telefoonnummer </br>
+				 <input type="ETD" name="username" size="15"
+				 maxlength="30" />
+				</h4>
+				<br/>
+				
+				<h4>IDeal<br/>
+				<select  name="referrer" id="hear-about">
+				 <option value="kiesuwbank">Kies uw bank</option>
+				 <option value="abnambro">ABN Ambro</option>
+				 <option value="asnbank">ASN Bank</option>
+				 <option value="bunq">bunq</option>
+				 <option value="ing">ING</option>
+				 <option value="knab">knab</option>
+				 <option value="rabobank">Rabobank</option>
+				 <option value="regiobank">Regio Bank</option>
+				 <option value="snsbank">SNS Bank</option>
+				 </select>
+				 </h4>
+								
+				
+				
+				<script>
+					function show_alert() {
+					   alert("BEDANKT VOOR UW DONATIE! U ontvangt een bevestiging van uw donatie via het door u opgegeven e-mailadres.");
+					}
+				</script>
+				
+				<input type="submit" name="subscribe" value="Doneren" onclick="show_alert();"  />
+				
+			</form>
+			
+			</div>
+		</div>
+		
+	</body>
+	</html>
+
+
+
+
+
+
+
+
+
+
+
+

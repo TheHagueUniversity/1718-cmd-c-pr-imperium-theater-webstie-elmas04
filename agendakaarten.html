@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Agenda & Kaarten </title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<script src="js/login.js"></script>
+		<script src="js/slidehome.js"></script>
+
+		
+<div id="navigatie">
+<!--INLOGGEN & AANMELDEN-->		
+		<div class="inloggen">
+			<div class="main">
+					<form id="form_id" method="post" name="myform">
+						<div class="email">
+							<label>Gebruikersnaam:</label>
+							<input type="text" name="username" id="username"/>
+						</div>
+						
+						<div class="wachtwoord">
+							<label>Wachtwoord:</label>
+							<input type="password" name="password" id="password"/>
+						</div>
+						
+						<div class="aanmelden">	
+							<input type="button" value="Aanmelden" id="submit" onclick="validate()"/>
+						</div>
+					</form>
+			</div>
+		</div>
+	
+<!--NAVIGATIE-->	
+		<nav>
+					<div class= "logo">
+				<a href="home.html"> <img style="max-width: 150px; margin-top: 0px;" src="images/logo.png"></a>
+			</div>
+			    <ul>
+					<li><a href="home.html">HOME</a></li>
+					<li><a href="agendakaarten.html">AGENDA & KAARTEN</a></li>
+					<li><a href="#">THEATER HUREN</a></li>
+					<li><a href="donatie.html">DONATIE</a></li>
+					<li><a href="overons.html">OVER ONS</a>
+						<ul>
+							<li><a href="nieuwsbrief.html">NIEUWSBRIEF</a></li>
+							<li><a href="#">TONEELGROEP IMPERIUM</a></li>
+							<li><a href="#">ARCHIEF</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+		</nav>
+</div>
+		<!--PLAATS PAGINA-->
+		<div id="plaatswebsite"> 
+			<h1> AGENDA & KAARTEN</h1>
+		</div>	
+		</head>
+	<body>
+
+	
+		
+<!--SLIDESHOW-->
+		<div class="slideshow">	<img src="images/home1.jpg" alt="images/home1.jpg" id="slideimage"></div>
+
+		
+		
+<!--CONTENT-->
+<!--actueel-->
+		<div id="contentagenda">
+			<div class="actueelsagenda">
+			<br/>
+			<br/>
+				<h1 style="margin-left:40px;"> ACTUEEL</h1>
+				<div class="actueelagendakaart">
+			<h2> THE STATE IF MARY </h2>
+			<img src="images/homevoorstelling1.jpg" id="voorstelling">
+			</div>
+				
+					<div class="informatieagenda">
+						<h2><i class="far fa-calendar-alt"></i> 28 maart 2018</h2>
+						<h2><i class="far fa-clock"></i> 20:30 - 22:00</h2>
+					
+					
+							<script>
+								function openWin() {
+									window.open("agendakaartenreserveren_TSIM.html");
+								}
+							</script>
+							<form>
+								<input id="buttonarticle" type="button" value="Reserveren" onclick="openWin()">
+							</form>
+					</div>
+			</div>
+			
+			
+				<div class="actueelsagenda">
+			
+			<br/>
+				<div class="actueelagendakaart">
+			<h2> PINTER'S OMERTA </h2>
+			<img src="images/homevoorstelling2.jpg" id="voorstelling">
+			</div>
+				
+					<div class="informatieagenda">
+						<h2><i class="far fa-calendar-alt"></i> 15 juni 2018</h2>
+						<h2><i class="far fa-clock"></i> 20:30 - 22:00</h2>
+					
+					
+							<script>
+								function openWin() {
+									window.open("agendakaartenreserveren_TSIM.html");
+								}
+							</script>
+							<form>
+								<input id="buttonarticle" type="button" value="Reserveren" onclick="openWin()">
+							</form>
+					</div>
+			</div>	
+				
+				
+				<div class="actueelsagenda">
+				
+<!--verwacht-->
+			<br/>
+			<br/>
+				<h1 style="margin-left:40px;"> VERWACHT</h1>
+				<div class="actueelagendakaart">
+			<h2> Het Zouthuis </h2>
+			<img src="images/verwacht1.jpg" id="voorstelling">
+			</div>
+				
+					<div class="informatieagenda">
+						<h2><i class="far fa-calendar-alt"></i> 18 juli 2018</h2>
+						<h2><i class="far fa-clock"></i> 20:30 - 22:00</h2>
+					
+					
+							<script>
+								function openWin() {
+									window.open("agendakaartenreserveren_TSIM.html");
+								}
+							</script>
+							<form>
+								<input id="buttonarticle" type="button" value="Reserveren" onclick="openWin()">
+							</form>
+					</div>
+			</div>
+			
+			
+				<div class="actueelsagenda">
+			
+			<br/>
+				<div class="actueelagendakaart">
+			<h2> Killer Joe </h2>
+			<img src="images/verwacht2.jpg" id="voorstelling">
+			</div>
+				
+					<div class="informatieagenda">
+						<h2><i class="far fa-calendar-alt"></i> 28 november 2018</h2>
+						<h2><i class="far fa-clock"></i> 20:30 - 22:00</h2>
+					
+					
+							<script>
+								function openWin() {
+									window.open("agendakaartenreserveren_TSIM.html");
+								}
+							</script>
+							<form>
+								<input id="buttonarticle" type="button" value="Reserveren" onclick="openWin()">
+							</form>
+					</div>
+			</div>	
+				
+				
+				
+				
+				
+				
+			</div>
+		</div>
+			
+<!--SIDEBAR-->
+		<div id="sidebar">
+
+			
+		</div>
+		
+	</body>
+	</html>
+
+
+
+
+
+
+
+
+
+
+
+

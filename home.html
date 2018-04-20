@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Home </title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<script src="js/login.js"></script>
+		<script src="js/slidehome.js"></script>
+
+<div id="navigatie">			
+		<div class="inloggen">
+			<div class="main">
+					<form id="form_id" method="post" name="myform">
+						<div class="email">
+							<label>Gebruikersnaam:</label>
+							<input type="text" name="username" id="username"/>
+						</div>
+						
+						<div class="wachtwoord">
+							<label>Wachtwoord:</label>
+							<input type="password" name="password" id="password"/>
+						</div>
+						
+						<div class="aanmelden">	
+							<input type="button" value="Aanmelden" id="submit" onclick="validate()"/>
+						</div>
+					</form>
+			</div>
+		</div>
+		
+		
+	
+		<nav>
+					<div class= "logo">
+				<a href="home.html"> <img style="max-width: 150px; margin-top: 0px;" src="images/logo.png"></a>
+			</div>
+			    <ul>
+					<li><a href="home.html">HOME</a></li>
+					<li><a href="agendakaarten.html">AGENDA & KAARTEN</a></li>
+					<li><a href="theaterhuren.html">THEATER HUREN</a></li>
+					<li><a href="donatie.html">DONATIE</a></li>
+					<li><a href="overons.html">OVER ONS</a>
+						<ul>
+							<li><a href="nieuwsbrief.html">NIEUWSBRIEF</a></li>
+							<li><a href="#">TONEELGROEP IMPERIUM</a></li>
+							<li><a href="#">ARCHIEF</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+		</nav>
+</div>
+		</head>
+		
+		
+	<body>
+		<div class="slideshow">	<img src="images/home1.jpg" alt="images/home1.jpg" id="slideimage"></div>
+		
+		
+<!--CONTENT-->
+		<div id="content">
+			<div class="articles">
+				<div class="article" style="margin-top: 37px;"">
+				<h2> BLIJF OP DE HOOGTE!</h2>
+				<img src="images/nieuwsbrief.jpg" id="advertentie">
+				<p>Meld je aan voor de nieuwsbrief en blijf op de hoogte van het volledige programma van het theater.</p>
+						<script>
+							function openWin() {
+								window.open("nieuwsbrief.html");
+							}
+						</script>
+						<form>
+							<input id="buttonarticle" type="button" value="Meer" onclick="window.location.href='nieuwsbrief.html'">
+						</form>
+				</div>
+
+				<div class="article">
+				<h2> DONEER AAN IMPERIUM!</h2>
+				<img src="images/donatie.jpg" id="advertentie">
+				<p>Draagt u Imperium Theater een warm hart toe en wilt dit bekrachtigen door geld te doneren? Allereerst zijn we u hier enorm dankbaar voor. Het gedoneerde bedrag willen wij graag inzetten voor verbetering van de duurzaamheid van het gebouw en ter bevordering van kunsteducatie.</p>
+						<script>
+							function openWin() {
+								window.open("donatie.html");
+							}
+						</script>
+						<form>
+							<input id="buttonarticle" type="button" value="Meer" onclick="window.location.href='donatie.html'">
+						</form>
+				</div>
+			<br/>
+		
+				<div class="article" margin-top>
+				<h2> ONZE ARCHIEF</h2>
+				<img src="images/archief.jpg" id="advertentie">
+				<p>Bekijk ons archief met foto's van al onze voorstellingen.</p>
+						<script>
+							function openWin() {
+								window.open("archief.html");
+							}
+						</script>
+						<form>
+							<input id="buttonarticle" type="button" value="Meer" onclick="window.location.href='archief.html'">
+						</form>
+				</div>
+				
+				<div class="article">
+				<h2> TONEELGROEP IMPERIUM</h2>
+				<img src="images/toneelgroep.jpg" id="advertentie">
+				<p>Theater Imperium is een klein vlakkevloer theater in het hart van Leiden. Wij bieden een intieme theaterzaal met 80 zitplaatsen, een ruime kleedkamer en een gezellige foyer met bediening. De bar is open van anderhalf uur voor tot minimaal anderhalf uur na de voorstelling; gezellig om voor te beschouwen en na te praten.</p>
+						<script>
+							function openWin() {
+								window.open("toneelgroep.html");
+							}
+						</script>
+						<form>
+							<input id="buttonarticle" type="button" value="Meer" onclick="window.location.href='toneelgroep.html'">
+						</form>
+				</div>
+			</div>
+		</div>
+		
+<!--SIDEBAR-->
+		<div id="sidebar">
+			<div class="actueels">
+				<h1> ACTUEEL</h1>
+				<div class="actuuel" style="margin-top: 37px;"">
+				<h2> THE STATE IF MARY </h2>
+				<img src="images/homevoorstelling1.jpg" id="voorstelling">
+				<br/>
+					<h2><i class="far fa-calendar-alt"></i> 28 maart 2018</h2>
+					<h2><i class="far fa-clock"></i> 20:30 - 22:00</h2>
+				
+				
+						<script>
+							function openWin() {
+								window.open("agendakaartenreserveren_TSIM.html");
+							}
+						</script>
+						<form>
+							<input id="buttonarticle" type="button" value="Reserveren" onclick="window.location.href='agendakaartenreserveren_TSIM.html'">
+						</form>
+				</div>
+				
+				<div class="actuuel" style="margin-top: 37px;"">
+				<h2> PINTER'S OMERTA  </h2>
+				<img src="images/homevoorstelling2.jpg" id="voorstelling">
+				<br/>
+					<h2><i class="far fa-calendar-alt"></i> 15 juni 2018</h2>
+					<h2><i class="far fa-clock"></i> 20:30 - 22:00</h2>
+				
+				
+						<script>
+							function openWin() {
+								window.open("agendakaartenreserveren_TSIM.html");
+							}
+						</script>
+						<form>
+							<input id="buttonarticle" type="button" value="Reserveren" onclick="window.location.href='agendakaartenreserveren_TSIM.html'">
+						</form>
+				</div>
+			</div>
+		
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
