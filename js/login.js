@@ -1,4 +1,5 @@
 var attempt = 3; // Variable to count number of attempts.
+// REVIEW: waarom comments in het engels, heb je deze js wel zelf geschreven?
 // Below function Executes on click of login button.
 function validate(){
 var username = document.getElementById("username").value;

@@ -8,9 +8,9 @@
 		<script src="js/login.js"></script>
 		<script src="js/slidedonatie.js"></script>
 
-		
+
 <div id="navigatie">
-<!--INLOGGEN & AANMELDEN-->		
+<!--INLOGGEN & AANMELDEN-->
 		<div class="inloggen">
 			<div class="main">
 					<form id="form_id" method="post" name="myform">
@@ -18,20 +18,20 @@
 							<label>Gebruikersnaam:</label>
 							<input type="text" name="username" id="username"/>
 						</div>
-						
+
 						<div class="wachtwoord">
 							<label>Wachtwoord:</label>
 							<input type="password" name="password" id="password"/>
 						</div>
-						
-						<div class="aanmelden">	
+
+						<div class="aanmelden">
 							<input type="button" value="Aanmelden" id="submit" onclick="validate()"/>
 						</div>
 					</form>
 			</div>
 		</div>
-	
-<!--NAVIGATIE-->	
+
+<!--NAVIGATIE-->
 		<nav>
 					<div class= "logo">
 				<a href="home.html"> <img style="max-width: 150px; margin-top: 0px;" src="images/logo.png"></a>
@@ -53,31 +53,31 @@
 		</nav>
 </div>
 		<!--PLAATS PAGINA-->
-		<div id="plaatswebsite"> 
+		<div id="plaatswebsite">
 			<h1> DONATIE</h1>
-		</div>	
+		</div>
 		</head>
 	<body>
 
-	
-		
+
+
 <!--SLIDESHOW-->
 		<div class="slideshow">	<img src="images/donatie1.jpg" alt="images/donatie1.jpg" id="slideimage"></div>
 
-		
-		
+
+
 <!--CONTENT-->
 <!--actueel-->
 		<div id="contentdonatie">
-			<div class="contentdonatieinfo"> 
-				
+			<div class="contentdonatieinfo">
+
 			<br/>
 			<br/>
 			<h2>WILT U EEN DONATIE DOEN?</h2>
 			<p>Draagt u het Imperium Theater een warm hart toe en wilt dit bekrachtigen door geld te doneren? Allereerst zijn we u hier enorm dankbaar voor.</p>
-			
+
 			<p>Alle sponsorgelden worden gebruikt voor de bedrijfsvoering van het Imperium Theater, voornamelijk ter promotie van de voorstellingen en verdampen niet in de post personeelskosten. Alle medewerkers, van kassamedewerker tot theaterdirecteur, werken met hart en ziel op vrijwillige basis.</p>
-		
+
 			<h4>Doneer jaarlijks €25,- en ontvang:</h4>
 			<ul>
 				<li>Een speciale donateursnieuwsbrief met achtergrondinformatie</li>
@@ -85,7 +85,7 @@
 				<li>Uitnodiging voor de jaarlijkse donateursavond rondom talentontwikkeling</li>
 				<li>10% korting op producten in onze webshop</li>
 			</ul>
-				
+
 			<h4>Doneer jaarlijks €50,- en ontvang:</h4>
 			<ul>
 				<li>Alle bovengenoemde voordelen</li>
@@ -104,61 +104,63 @@
 		<div id="sidebardonatie">
 			<div class="sidebardoneren">
 			<h2>DONEER MEE</h2>
-				<form>
-				
+				<form><!-- REVIEW: mist verplichte attributen -->
+
 				<h4 style= "margin-top:10px">Bedrag*
 				<div class="radiobuttons">
 				<p style="margin-top:0px">
+					<!-- REVIEW: label?  -->
 				<input type="radio" name="genre" value="rock"
 				 checked="checked" />
-				 <br/> 
+				 <br/> <!-- REVIEW: dit is inline styling -->
 				 <br/> €25,-
 				 </p>
-				
-				 
+
+
 				 <p>
 				 <input type="radio" name="genre" value="pop" />
-				 <br/> 
+				 <br/>
 				 <br/>
 				 €50,-
 				  </p>
-				  
+
 				 <p>
 				 <input type="radio" name="genre" value="jazz" />
-				 <br/> 
+				 <br/>
 				 <br/>
 				 €75,-
 				</p>
 				 </h4>
 				</div>
-				
+
 				<h4 style="width:380px; margin-top:-25px;">Naam* </br>
+					<!-- REVIEW: ook hier weer <label> en inline styling niet toegestaan -->
 				 <input type="VTA" name="username" size="15"
 				 maxlength="30" placeholder="Naam" style="margin-right:5px" />
-				  
-				 
-				  
+
+
+
 				 <input type="VTA" name="username" size="15"
 				 maxlength="30" placeholder="Tussenv" style="margin-right:5px"/>
-				 
+
 				 <input type="VTA" name="username" size="15"
 				 maxlength="30" placeholder="Achternaam"/>
 				</h4>
 				<br/>
-				
-				
+
+
 				<h4 style="width:355px">E-mailadres* </br>
 				 <input type="ETD" name="username" size="15"
 				 maxlength="30" />
 				</h4>
 				<br/>
-				
+
 				<h4 style="width:355px">Telefoonnummer </br>
 				 <input type="ETD" name="username" size="15"
 				 maxlength="30" />
 				</h4>
 				<br/>
-				
+
 				<h4>IDeal<br/>
 				<select  name="referrer" id="hear-about">
 				 <option value="kiesuwbank">Kies uw bank</option>
@@ -172,33 +174,21 @@
 				 <option value="snsbank">SNS Bank</option>
 				 </select>
 				 </h4>
-								
-				
-				
+
+
+
 				<script>
 					function show_alert() {
 					   alert("BEDANKT VOOR UW DONATIE! U ontvangt een bevestiging van uw donatie via het door u opgegeven e-mailadres.");
 					}
 				</script>
-				
+
 				<input type="submit" name="subscribe" value="Doneren" onclick="show_alert();"  />
-				
+
 			</form>
-			
+
 			</div>
 		</div>
-		
+
 	</body>
 	</html>
-
-
-
-
-
-
-
-
-
-
-
-

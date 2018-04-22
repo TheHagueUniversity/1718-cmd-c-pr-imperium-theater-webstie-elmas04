@@ -1,4 +1,7 @@
 <!doctype html>
+<!-- REVIEW: de homepagina noem je altijd index.html
+schrijf DOCTYPE in hoofdletters
+ -->
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -8,35 +11,40 @@
 		<script src="js/login.js"></script>
 		<script src="js/slidehome.js"></script>
 
-<div id="navigatie">			
+<div id="navigatie">
+<!-- REVIEW: navigatie is <nav> element -->
 		<div class="inloggen">
 			<div class="main">
 					<form id="form_id" method="post" name="myform">
+						<!-- REVIEW: action attribuut mist -->
 						<div class="email">
 							<label>Gebruikersnaam:</label>
+							<!-- REVIEW: onjuist gebruik van label, niet duidelijk waar label bij hoort -->
 							<input type="text" name="username" id="username"/>
 						</div>
-						
+
 						<div class="wachtwoord">
 							<label>Wachtwoord:</label>
 							<input type="password" name="password" id="password"/>
 						</div>
-						
-						<div class="aanmelden">	
+
+						<div class="aanmelden">
 							<input type="button" value="Aanmelden" id="submit" onclick="validate()"/>
 						</div>
 					</form>
 			</div>
 		</div>
-		
-		
-	
+
+
+
 		<nav>
 					<div class= "logo">
 				<a href="home.html"> <img style="max-width: 150px; margin-top: 0px;" src="images/logo.png"></a>
+				<!-- REVIEW: inline styling op img is niet toegestaan -->
 			</div>
 			    <ul>
 					<li><a href="home.html">HOME</a></li>
+					<!-- REVIEW: ook hoofdletters is vorm van styling, dit moet via CSS -->
 					<li><a href="agendakaarten.html">AGENDA & KAARTEN</a></li>
 					<li><a href="theaterhuren.html">THEATER HUREN</a></li>
 					<li><a href="donatie.html">DONATIE</a></li>
@@ -52,30 +60,35 @@
 		</nav>
 </div>
 		</head>
-		
-		
+
+
 	<body>
+		<!-- REVIEW: geen body, maar <main> -->
 		<div class="slideshow">	<img src="images/home1.jpg" alt="images/home1.jpg" id="slideimage"></div>
-		
-		
+
+
 <!--CONTENT-->
 		<div id="content">
 			<div class="articles">
-				<div class="article" style="margin-top: 37px;"">
+				<!-- REVIEW: geen div, maar <article> -->
+				<div class="article" style="margin-top: 37px;"><!-- REVIEW: dubbele aanhalingsteken, en inline styling niet toegestaan -->
 				<h2> BLIJF OP DE HOOGTE!</h2>
-				<img src="images/nieuwsbrief.jpg" id="advertentie">
+				<img src="images/nieuwsbrief.jpg" id="advertentie"> <!-- REVIEW: alt attribuut? -->
+				REVIEW
 				<p>Meld je aan voor de nieuwsbrief en blijf op de hoogte van het volledige programma van het theater.</p>
-						<script>
+						<script>// REVIEW: inline script, waarom niet in js bestand?
 							function openWin() {
 								window.open("nieuwsbrief.html");
 							}
 						</script>
 						<form>
 							<input id="buttonarticle" type="button" value="Meer" onclick="window.location.href='nieuwsbrief.html'">
+							<!-- REVIEW: een formulier zonder input velden? Dit zijn gewoon links <a href></a>-->
 						</form>
 				</div>
 
 				<div class="article">
+					<!-- REVIEW: <article> -->
 				<h2> DONEER AAN IMPERIUM!</h2>
 				<img src="images/donatie.jpg" id="advertentie">
 				<p>Draagt u Imperium Theater een warm hart toe en wilt dit bekrachtigen door geld te doneren? Allereerst zijn we u hier enorm dankbaar voor. Het gedoneerde bedrag willen wij graag inzetten voor verbetering van de duurzaamheid van het gebouw en ter bevordering van kunsteducatie.</p>
@@ -89,7 +102,7 @@
 						</form>
 				</div>
 			<br/>
-		
+
 				<div class="article" margin-top>
 				<h2> ONZE ARCHIEF</h2>
 				<img src="images/archief.jpg" id="advertentie">
@@ -103,7 +116,7 @@
 							<input id="buttonarticle" type="button" value="Meer" onclick="window.location.href='archief.html'">
 						</form>
 				</div>
-				
+
 				<div class="article">
 				<h2> TONEELGROEP IMPERIUM</h2>
 				<img src="images/toneelgroep.jpg" id="advertentie">
@@ -119,19 +132,20 @@
 				</div>
 			</div>
 		</div>
-		
+
 <!--SIDEBAR-->
 		<div id="sidebar">
+			;<!-- REVIEW: <aside> dus -->
 			<div class="actueels">
 				<h1> ACTUEEL</h1>
-				<div class="actuuel" style="margin-top: 37px;"">
+				<div class="actuuel" style="margin-top: 37px;"">REVIEW Weer dubbele aanhalingstekens
 				<h2> THE STATE IF MARY </h2>
 				<img src="images/homevoorstelling1.jpg" id="voorstelling">
 				<br/>
 					<h2><i class="far fa-calendar-alt"></i> 28 maart 2018</h2>
 					<h2><i class="far fa-clock"></i> 20:30 - 22:00</h2>
-				
-				
+
+
 						<script>
 							function openWin() {
 								window.open("agendakaartenreserveren_TSIM.html");
@@ -141,15 +155,15 @@
 							<input id="buttonarticle" type="button" value="Reserveren" onclick="window.location.href='agendakaartenreserveren_TSIM.html'">
 						</form>
 				</div>
-				
+
 				<div class="actuuel" style="margin-top: 37px;"">
 				<h2> PINTER'S OMERTA  </h2>
 				<img src="images/homevoorstelling2.jpg" id="voorstelling">
 				<br/>
 					<h2><i class="far fa-calendar-alt"></i> 15 juni 2018</h2>
 					<h2><i class="far fa-clock"></i> 20:30 - 22:00</h2>
-				
-				
+
+
 						<script>
 							function openWin() {
 								window.open("agendakaartenreserveren_TSIM.html");
@@ -160,18 +174,6 @@
 						</form>
 				</div>
 			</div>
-		
+
 	</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
